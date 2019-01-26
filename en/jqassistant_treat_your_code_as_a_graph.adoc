@@ -1,0 +1,61 @@
+= jQAssistant: Treat your code as a graph
+
+== Talk Outline
+
+jQAssistant allows you to build a graph representation
+out of your Java project to analyze it and to write
+automatic checks to ensure your own rules in your
+code base without limitations on what you would like
+to check.
+
+=== Talk Description
+
+Each software project is build out of many different
+software artifacts and each of them is connected to many
+other artifacts. In case of a programming language this
+can be classes, methods or variables. A databse is build
+upon tables and columns. A build tool describes
+the structure of a software project and its dependencies.
+
+All these artifacts are connected to each other. Either in
+an explizit manner, e.g. a class has methods or a class
+is used by another class, or in an implicit manner,
+e.g. a specific classes must be always in a specific
+package or the allowed usage relation ships.
+
+All this aspects can be represented in form of a graph. The nodes
+of this graph represents all items of your software project
+and the edges between the nodes describe their relationship,
+how they are connected to each other.
+
+One difficult task in our daily work is to find unwanted or
+harmful relationships. The second difficult task is
+to ensure that only allowed relationship are used and applied.
+
+The open source tool http://www.jqassistant.org[jQAssistant^]
+can help to understand, visualize, and analyse
+structures and relationships of a Java project. It also
+can help you to ensure all the explizit and implizit relationships
+and rules in your code you use in your daily work.
+
+For this jQAssistants scans all files in a Java project
+and builds a graph out ouf the found artifacts and relationships
+in a graph database. jQAssistant uses therefore Neo4j 3.
+The generated graph can be queried with Neo4j's query language
+Cypher. This allows you analyse a project. In addition it allows
+you to enrich the generated with additional information
+by adding your own nodes and relations to describe your
+own concepts.
+
+Furthermore jQAssistand allows you to define rules for your
+project which can be checked automatically during the build or
+in the CI pipeline.
+
+In my talk I will show what is possible with jQAssistant, how to
+integrate it and how it can help you to enforce your coding rules
+and architecture.
+
+Afterwards the attendee will understand the idea of
+software as graph, will be able to integrate jQAssistant
+and to write this own checks for his project.
+
