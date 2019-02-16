@@ -1,0 +1,13 @@
+/.idea
+
+# Using a Mac means
+.DS_Store
+
+# 
+*~
+
+# Genereated files
+*.pdf
+*.pdfmarks
+*.html
+
