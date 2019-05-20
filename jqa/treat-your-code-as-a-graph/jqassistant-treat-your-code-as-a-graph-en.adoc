@@ -6,14 +6,17 @@ jQAssistant allows you to build a graph representation
 out of your Java project to analyze it and to write
 automatic checks to ensure your own rules in your
 code base without limitations on what you would like
-to check.
+to check. Furthermore it allows you not only to analyse
+your software project, but also to improve the way 
+you communicate your software architecture to the 
+various stakeholders.
 
 === Talk Description
 
 Each software project is build out of many different
 software artifacts and each of them is connected to many
 other artifacts. In case of a programming language this
-can be classes, methods or variables. A databse is build
+can be classes, methods or variables. A database is build
 upon tables and columns. A build tool describes
 the structure of a software project and its dependencies.
 
@@ -52,8 +55,9 @@ project which can be checked automatically during the build or
 in the CI pipeline.
 
 In my talk I will show what is possible with jQAssistant, how to
-integrate it and how it can help you to enforce your coding rules
-and architecture.
+integrate it in your project, how it can help you to enforce
+your coding rules and architecture and even how it can help
+you to improve the communication with your various stakeholders.
 
 Afterwards the attendee will understand the idea of
 software as graph, will be able to integrate jQAssistant
